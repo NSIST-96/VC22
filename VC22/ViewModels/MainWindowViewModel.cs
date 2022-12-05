@@ -21,7 +21,7 @@ namespace VC22.ViewModels
             set => Set(ref _Title, value);
         }
         #endregion
-        /// <summary> Статус окна </summary>
+        
         #region Статус окна
         private string _Status = "Готов!";
         /// <summary> Статус окна </summary>
