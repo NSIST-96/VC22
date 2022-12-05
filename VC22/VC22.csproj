@@ -9,9 +9,9 @@
 
   <ItemGroup>
     <Folder Include="Modules\" />
-    <Folder Include="Views\" />
-    <Folder Include="ViewModels\" />
     <Folder Include="Servises\" />
+    <Folder Include="Data\" />
+    <Folder Include="Infrastructure\" />
   </ItemGroup>
 
 </Project>
