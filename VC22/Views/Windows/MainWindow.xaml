@@ -20,7 +20,10 @@
             </MenuItem>
         </Menu>
         <StatusBar DockPanel.Dock="Bottom">
-            
+            <TextBlock Text="1234"/>
+            <StatusBar>
+                <ProgressBar Height="20" Width="300" Value="70"></ProgressBar>
+            </StatusBar>
         </StatusBar>
         <TabControl>
             <TabItem Header="Вкладака 1">
@@ -43,9 +46,10 @@
                     <Rectangle Grid.Row="1" Grid.Column="0"
                                Margin="10"
                                Fill="Gray" Stroke="Black"
-                               RadiusX="10" RadiusY="10">
-                        
-                    </Rectangle>
+                               RadiusX="10" RadiusY="10"/>
+                    <GridSplitter Grid.Column="0" Grid.RowSpan="2"
+                                  HorizontalAlignment="Right"
+                                  Width="4"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Вкладака 2"></TabItem>
