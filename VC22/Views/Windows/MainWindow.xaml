@@ -10,12 +10,45 @@
     <Window.DataContext> 
         <vm:MainWindowViewModel/>
     </Window.DataContext>
-    <Grid>
-        <TextBox Margin="36,30"
-                 Text="{Binding Title, UpdateSourceTrigger=PropertyChanged}"
-                 TextWrapping="Wrap"
-                 VerticalAlignment="Top"
-                 HorizontalAlignment="Left"
-                 Width="300"/>
-    </Grid>
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="Фаил">
+                <MenuItem Header="Выход"/>
+            </MenuItem>
+            <MenuItem Header="Помощь">
+                <MenuItem Header="О программе"/>
+            </MenuItem>
+        </Menu>
+        <StatusBar DockPanel.Dock="Bottom">
+            
+        </StatusBar>
+        <TabControl>
+            <TabItem Header="Вкладака 1">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Grid.Row="0" Grid.Column="0" 
+                               Fill="Blue" Stroke="Red" 
+                               Margin="10,20"
+                               StrokeThickness="3" 
+                               RadiusX="5" RadiusY="7"/>
+                    <Ellipse Grid.Row="0" Grid.Column="1"
+                             Fill="Blue" Stroke="Red" StrokeThickness="5"/>
+                    <Rectangle Grid.Row="1" Grid.Column="0"
+                               Margin="10"
+                               Fill="Gray" Stroke="Black"
+                               RadiusX="10" RadiusY="10">
+                        
+                    </Rectangle>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Вкладака 2"></TabItem>
+        </TabControl>
+    </DockPanel>
 </Window>
