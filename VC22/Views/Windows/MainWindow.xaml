@@ -20,7 +20,7 @@
             </MenuItem>
         </Menu>
         <StatusBar DockPanel.Dock="Bottom">
-            <TextBlock Text="1234"/>
+            <TextBlock Text="{Binding Status}"/>
             <StatusBar>
                 <ProgressBar Height="20" Width="300" Value="70"></ProgressBar>
             </StatusBar>

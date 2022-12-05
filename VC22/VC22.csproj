@@ -8,10 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Infrastructure\Commands\Base\" />
     <Folder Include="Modules\" />
     <Folder Include="Servises\" />
     <Folder Include="Data\" />
-    <Folder Include="Infrastructure\" />
   </ItemGroup>
 
 </Project>
