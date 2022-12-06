@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VC22", "VC22\VC22.csproj", "{18A97D9C-2BE2-488E-BA72-9B2C36348C0D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VC22", "VC22\VC22.csproj", "{18A97D9C-2BE2-488E-BA72-9B2C36348C0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestLib", "Tests\TestLib\TestLib.csproj", "{F3B35F09-0CB2-40EE-B5FA-B6E05A9270A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{18A97D9C-2BE2-488E-BA72-9B2C36348C0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18A97D9C-2BE2-488E-BA72-9B2C36348C0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18A97D9C-2BE2-488E-BA72-9B2C36348C0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3B35F09-0CB2-40EE-B5FA-B6E05A9270A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3B35F09-0CB2-40EE-B5FA-B6E05A9270A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3B35F09-0CB2-40EE-B5FA-B6E05A9270A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3B35F09-0CB2-40EE-B5FA-B6E05A9270A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

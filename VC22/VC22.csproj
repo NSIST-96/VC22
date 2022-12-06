@@ -7,4 +7,10 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Modules\" />
+    <Folder Include="Servises\" />
+    <Folder Include="Data\" />
+  </ItemGroup>
+
 </Project>
