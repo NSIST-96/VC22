@@ -1,4 +1,7 @@
-﻿using VC22.ViewModels.Base;
+﻿using System.Windows.Input;
+using VC22.ViewModels.Base;
+using VC22.Infrastructure.Commands;
+using System.Windows;
 
 namespace VC22.ViewModels
 {
@@ -29,7 +32,32 @@ namespace VC22.ViewModels
         {
             get => _Status;
             set => Set(ref _Status, value);
+        }
+        #endregion
+
+        #region Команды
+
+        #region CloseApplicationCommand
+        // что за команда
+        public ICommand CloseApplicationCommand { get; } //свойство
+        // что команда делает
+        private bool CanCloseApplicationCommandExecute(object p) => true;
+        private void OnCloseApplicationCommandExecuted(object p)
+        {
+            Application.Current.Shutdown();
         } 
         #endregion
+
+        #endregion
+
+
+        public MainWindowViewModel()
+        {
+            #region Команды
+
+            CloseApplicationCommand = new LambdaCommand(OnCloseApplicationCommandExecuted, CanCloseApplicationCommandExecute);
+
+            #endregion
+        }
     }
 }
